@@ -1,0 +1,41 @@
+# Setup Reproducible Research Software
+
+## Git, Github
+
+* [OHI Manual - Setup a Github Account and Git](http://ohi-science.org/manual/#set-up-a-github-account-and-git)
+  
+    + 5.1 Set up a Github Account and git
+    + 5.1.1 Install git software
+    + 5.1.2 Set up your Git Identity
+    + 5.1.3 Create a folder called github on your computer
+    + 5.1.4 Update permissions
+    + 5.2 Download R and RStudio
+    + 5.3 Cloning a repository to your local computer
+        
+## R, Rstudio
+
+* [OHI Manual - Download R, RStudio](http://ohi-science.org/manual/#download-r-and-rstudio)
+
+    - [**R**](https://cran.r-project.org/) statistical programming language
+    - [**RStudio**](https://www.rstudio.com/products/rstudio/download2/) integrated development environment (IDE)
+
+
+## Diving Deeper
+
+- course materials
+
+    * [Software Carpentry](http://remi-daigle.github.io/2016-04-15-UCSB/) workshop, particularly Day 2
+    * [Environmental Informatics](http://ucsb-bren.github.io/env-info/) course
+
+
+- [GitHub Guides](https://guides.github.com/)
+
+    * [Hello World · GitHub Guides](https://guides.github.com/activities/hello-world/)
+    * [Getting Started with GitHub Pages · GitHub Guides](https://guides.github.com/features/pages/)
+    * [Mastering Markdown · GitHub Guides](https://guides.github.com/features/mastering-markdown/)
+
+- getting started with R
+
+    * [R tutorials | R-bloggers](http://www.r-bloggers.com/how-to-learn-r-2/)
+    * [Online Learning – RStudio](https://www.rstudio.com/online-learning/)
+    * [R Markdown](http://rmarkdown.rstudio.com/)
