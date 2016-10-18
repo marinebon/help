@@ -1,4 +1,4 @@
-# Applications
+# Applications  {#apps}
 
 Here we describe applications with conceptual process overviews and technical implementation details.
 

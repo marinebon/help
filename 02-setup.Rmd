@@ -1,4 +1,4 @@
-# Setup Software for Reproducible Research
+# Setup Software for Reproducible Research {#setup}
 
 ## Git, Github
 
