@@ -24,6 +24,11 @@
 
 - the "bible of R": [R for Data Science](http://r4ds.had.co.nz/)
 
+- R for Matlab users:
+
+    - [R for MATLAB users | Mathesaurus](http://mathesaurus.sourceforge.net/octave-r.html)
+    - [MATLAB R / R Reference | UMaine](http://www.math.umaine.edu/~hiebeler/comp/matlabR.pdf)
+
 - course materials
 
     * [Software Carpentry](http://remi-daigle.github.io/2016-04-15-UCSB/) workshop, particularly Day 2
