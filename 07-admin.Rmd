@@ -1,0 +1,10 @@
+# Server Admin {#admin}
+
+- [How To Set Up SSH Keys on Ubuntu 16.04 | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1604)
+
+
+`ssh-keygen -m PEM` based on this documentation:
+
+- [Amazon EC2 Key Pairs - Amazon Elastic Compute Cloud](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#how-to-generate-your-own-key-and-import-it-to-aws)
+
+  > SSH private key file format must be PEM (for example, use ssh-keygen -m PEM to convert the OpenSSH key into the PEM format)
