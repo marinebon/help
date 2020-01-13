@@ -148,7 +148,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="6" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
-<li class="chapter" data-level="7" data-path="admin.html"><a href="admin.html"><i class="fa fa-check"></i><b>7</b> Server Admin</a></li>
+<li class="chapter" data-level="7" data-path="admin.html"><a href="admin.html"><i class="fa fa-check"></i><b>7</b> Server Admin</a><ul>
+<li class="chapter" data-level="7.1" data-path="admin.html"><a href="admin.html#setup-authentication-with-ssh-keys"><i class="fa fa-check"></i><b>7.1</b> Setup Authentication with SSH keys</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="admin.html"><a href="admin.html#login"><i class="fa fa-check"></i><b>7.1.1</b> Login</a></li>
+</ul></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -171,16 +175,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="admin" class="section level1">
 <h1><span class="header-section-number">7</span> Server Admin</h1>
+<div id="setup-authentication-with-ssh-keys" class="section level2">
+<h2><span class="header-section-number">7.1</span> Setup Authentication with SSH keys</h2>
 <ul>
 <li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1604">How To Set Up SSH Keys on Ubuntu 16.04 | DigitalOcean</a></li>
 </ul>
-<p><code>ssh-keygen -m PEM</code> based on this documentation:</p>
+<p>Note that <code>ssh-keygen -m PEM</code> is needed for logging into Amazon servers:</p>
 <ul>
 <li><p><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#how-to-generate-your-own-key-and-import-it-to-aws">Amazon EC2 Key Pairs - Amazon Elastic Compute Cloud</a></p>
 <blockquote>
 <p>SSH private key file format must be PEM (for example, use ssh-keygen -m PEM to convert the OpenSSH key into the PEM format)</p>
 </blockquote></li>
 </ul>
+<div id="login" class="section level3">
+<h3><span class="header-section-number">7.1.1</span> Login</h3>
+<p>Once the key is generated on the server, logging into a terminal is simply a matter of specifying location of key file and the <a href="mailto:user@server" class="email">user@server</a>:</p>
+<pre><code>ssh -i ~/.ssh/id_rsa.pem bbest@imars-mbon.marine.usf.edu</code></pre>
 
 <div id="refs" class="references">
 <div>
@@ -188,6 +198,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div>
 <p>———. 2019. <em>Bookdown: Authoring Books and Technical Documents with R Markdown</em>. <a href="https://CRAN.R-project.org/package=bookdown">https://CRAN.R-project.org/package=bookdown</a>.</p>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -247,20 +259,6 @@ gitbook.start({
 });
 </script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:")
-      if (/^https?:/.test(src))
-        src = src.replace(/^https?:/, '');
-    script.src = src;
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
 </body>
 
 </html>
